@@ -12,10 +12,9 @@ end
 def find_max_value(array)
   # Add your solution here
   counter = 0
+  max = 0
   while counter < array.length do
-    if !max
-      max = array[counter]
-    elsif array[counter] > max
+    if array[counter] > max
       max = array[counter]
     end
     counter += 1
@@ -25,11 +24,10 @@ end
 
 def find_min_value(array)
   # Add your solution here
-  counter = 0 
+  counter = 0
+  min = 1000000
   while counter < array.length do
-    if !min 
-      min = array[counter]
-    elsif array[counter] < min
+    if array[counter] < min
       min = array[counter]
     end
     counter += 1
