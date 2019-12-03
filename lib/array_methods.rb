@@ -29,7 +29,7 @@ def find_min_value(array)
   while counter < array.length do
     if !min 
       min = array[counter]
-      elsif
+    elsif 
       
       
   end
